@@ -1,0 +1,52 @@
+size=400x420size_end
+<html noscrollbar>
+   <title>Inertia Path Editor</title>
+
+   <body>
+		<center>
+			<table width=100% >
+				<tr>
+					<td width=0>
+						<img height=342 />
+					</td>
+					<td width=400 align="center">
+					
+						<table cellpadding=2 cellspacing=2 width=80%>
+							<tr>
+								<td>
+									<font name="hs12" color="LEVEL">
+										Design Mode
+									</font>
+								</td>
+								%tog%
+							</tr>
+						</table>
+						<br>
+						<table width=90% align=center>
+							<tr>
+								<td><img width=200></td>
+								<td><img width=40></td>
+								<td><img width=40></td>
+							</tr>
+							%paths%
+						</table>
+					
+					</td>
+						
+				</tr>
+			
+			</table>
+			
+			<table>
+				<tr>
+				
+					<td><button value="Refresh" action="bypass inertia_panel_path_editor %id% openpath %path%" width=60 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="%hid%" action="bypass inertia_panel_path_editor %id% path %path% hide" width=60 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Sim" action="bypass inertia_panel_path_editor %id% sim %path%" width=60 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Back" action="bypass inertia_panel_path_editor %id% renderpaths" width=60 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+
+      </center>
+   </body>
+</html>

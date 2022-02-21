@@ -1,0 +1,88 @@
+size=400x500size_end
+<html noscrollbar="1">
+<title>InertiaX Control Panel</title>
+
+<br>
+<center>
+
+
+<font color="LEVEL" name="hs12">InertiaX Settings</font>
+
+<br>
+
+<table width=100%>
+
+	<tr>
+		<td>
+			<img width=180 />
+		</td>
+		<td>
+			<img width=80 />
+		</td>
+		<td>
+			<img width=80 />
+		</td>
+	</tr>
+
+	%state%
+	
+	<tr>
+		<td>
+			<font color="LEVEL" name="hs12">InertiaX Core Ticks</font>
+		</td>
+		<td>
+			<combobox width=80 var="ticks" list="%ticks%">
+		</td>
+		<td>
+			<button value="Set" action="bypass admin_inertia_tickset $ticks" width=80 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+		</td>
+	</tr>
+
+</table>
+
+<br><br>
+<br><br>
+
+<font color="LEVEL" name="hs12">InertiaX Status</font>
+
+<br>
+
+<table width=80% border=0>
+
+	<tr>
+		<td>
+			<img width=100 />
+		</td>
+		<td>
+			<img width=100 />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<font color="LEVEL" name="hs12">Inertia Job Count</font>
+		</td>
+		<td>
+			<font color="LEVEL" name="hs12">%count%</font>
+		</td>
+	</tr>
+	<tr>
+		<td >
+			<font color="LEVEL" name="hs12">Core Latency</font>
+		</td>
+		<td>
+			<font color="LEVEL" name="hs12">%lag% ms</font>
+		</td>
+	</tr>
+
+
+</table>
+
+
+<br><br>
+<br><br>
+<br><br>
+<button value="Refresh" action="bypass admin_inertia" width=100 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+
+</center>
+</html>

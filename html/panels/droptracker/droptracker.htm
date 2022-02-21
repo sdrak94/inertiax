@@ -1,0 +1,37 @@
+size=400x420size_end
+<html noscrollbar>
+   <title>Inertia Drop Tracker</title>
+
+   <body>
+		<br>
+		<br>
+		<center>
+			<table width=100% >
+				<tr>
+					<td width=0>
+						<img height=325 />
+					</td>
+					<td width=400 align="center">
+					
+						<table cellpadding=2 cellspacing=2 width=80%>
+							%drops%
+						</table>
+					
+					</td>
+						
+				</tr>
+			
+			</table>
+			
+			<table>
+				<tr>
+				
+					<td><button value="Refresh" action="bypass inertia_panel_drops_tracker %id% render" width=60 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Reset" action="bypass inertia_panel_drops_tracker %id% reset" width=60 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Back" action="bypass inertia_refresh %id%" width=60 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+
+      </center>
+   </body>
+</html>

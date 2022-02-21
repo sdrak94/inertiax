@@ -1,0 +1,198 @@
+size=400x420size_end
+<html noscrollbar="1">
+   <title>Inertia (%name%)</title>
+   <body>
+      <center>
+	  
+		<br>
+		 
+		<table background="l2ui_ct1.Windows_DF_TooltipBG" cellspacing=1 cellpadding=1 width=100%>
+			 <tr>
+               <td align=center width=100%>
+                  <font name="hs12" color="e3e3e3">Status</font>
+               </td>
+            </tr>
+			<tr>
+				<td align=center>
+					<table align=center width=100% cellspacing=2 cellpadding=2>
+						
+						<tr>
+							<td><img width=70 /></td>
+							<td><img width=70 /></td>
+							<td><img width=70 /></td>
+							<td><img width=70 /></td>
+							
+						</tr>
+						
+					    <tr>
+						   %state%
+						   <td align=center>
+							  <button value="Refresh" action="bypass inertia_refresh %id%" width=70 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						   <td align=center>
+							  <button value="Reset" action="bypass inertia_reset %id%" width=70 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+						
+					</table>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td align=center>
+					<font color="e3e3e3">Time Left </font>
+					<font color="d2a679">%time%</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td><img height=5/></td>
+			</tr>
+
+         </table>
+	    
+		<br>
+
+         <table background="l2ui_ct1.Windows_DF_TooltipBG" width=100% height=60>
+			<tr>
+				<td align=center width=100%>
+                  <font name="hs12" color="e3e3e3">Behavior</font>
+                </td>
+
+			</tr>
+			<tr>
+				<td>
+					<table width=100%>
+					    <tr>
+						   <td align=center>
+							  <font color="e3e3e3">Auto Attack: </font>
+						   </td>
+						   <td align=center>
+							  <combobox width=135 var="target" list="%attack%">
+						   </td>
+						   <td align=center>
+							  <button value="Set" action="bypass inertia_attack_type %id% $target" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+						<tr>
+						   <td align=center>
+							  <font color="e3e3e3">Party Target: </font>
+						   </td>
+						   <td align=center>
+							  <combobox width=135 var="party" list="%party%">
+						   </td>
+						   <td align=center>
+							  <button value="Set" action="bypass inertia_party_target %id% $party" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+						<tr>
+						   <td align=center>
+							  <font color="e3e3e3">Movement: </font>
+						   </td>
+						   <td align=center>
+							  <combobox width=135 var="move" list="%move%">
+						   </td>
+						   <td align=center>
+							  <button value="Set" action="bypass inertia_move_type %id% $move" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+						<tr>
+						   <td align=center>
+							  <font color="e3e3e3">More Options: </font>
+						   </td>
+						   <td align=center>
+							  <combobox width=135 var="opt" list="%opt%">
+						   </td>
+						   <td align=center>
+							  <button value="Open" action="bypass inertia_render_panel %id% $opt" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+						   </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><img height=5/></td>
+			</tr>
+         </table>
+		 
+		 <br>
+
+         <table width=100% background="l2ui_ct1.Windows_DF_TooltipBG" cellspacing=2 cellpadding=2>
+             <tr>
+              <td align=center width=100%>
+                  <font name="hs12" color="e3e3e3">Targeting</font>
+               </td>
+            </tr>
+			<tr>
+				<td>
+				
+					<table width=100% align=center>
+					
+						<tr>
+							%search%
+						</tr>
+			
+					</table>
+				
+				</td>
+			
+			</tr>
+			<tr>
+				<td><img height=5/></td>
+			</tr>
+         </table>
+         <br>
+		 
+         <table width=100%>
+			<tr>
+				<td>
+				
+					<table width=100% background="l2ui_ct1.Windows_DF_TooltipBG">
+					
+						<tr>
+						   <td align=center width=100%>
+							  <font name="hs12" color="e3e3e3">Auto Skill</font>
+						   </td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										%ask%
+									</tr>
+									<tr>
+										<td><img height=5 /></td>
+									</tr>
+									<tr>
+										<td align=center><font name=hs10 color=LEVEL>1</font></td>
+										<td align=center><font name=hs10 color=LEVEL>2</font></td>
+										<td align=center><font name=hs10 color=LEVEL>3</font></td>
+										<td align=center><font name=hs10 color=LEVEL>4</font></td>
+										<td align=center><font name=hs10 color=LEVEL>5</font></td>
+										<td align=center><font name=hs10 color=LEVEL>6</font></td>
+										<td align=center><font name=hs10 color=LEVEL>7</font></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><img height=5/></td>
+						</tr>
+					
+					
+					</table>
+				
+				</td>
+				<td><img width=1/></td>
+				
+			</tr>
+         </table>
+		 
+		 <br>
+		 
+
+
+      </center>
+   </body>
+</html>
