@@ -1,7 +1,7 @@
 # inertiax
 
 The best coded autofarm engine for lineage 2
-originally developed for L2AEPvP by Blizzard
+originally developed for L2AEPvP in 2021
 
 The code will require a little clean-up 
 
