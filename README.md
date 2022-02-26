@@ -20,3 +20,6 @@ ltc1q66fn0njfl68ulks2sx367su94e2055zwapde7w
 
 
 PS: The extensions are not included in this share (paths, drop tracker, etc)
+
+
+vid: https://www.youtube.com/watch?v=PYrHvVVItMQ
